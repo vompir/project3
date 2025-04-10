@@ -1,0 +1,43 @@
+### Логи и кэш ###
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+*.log
+*.tmp
+
+### Зависимости ###
+node_modules/
+.cache/
+dist/
+.temp/
+
+### Настройки IDE ###
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+### Системные файлы ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Окружение ###
+.env
+.env.local
+.env*.local
+
+### Сборка и артефакты ###
+.sass-cache/
+*.css.map
+*.js.map
+*.min.js
+*.min.css
+build/
+public/assets/
+
+### Автогенерируемые файлы ###
+package-lock.json
+yarn.lock

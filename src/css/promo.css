@@ -146,15 +146,3 @@
 .header__phone button:hover {
   background-color: rgb(148.255, 0.745, 0.745);
 }
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: "Museo Sans Cyrl", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 950px;
-}

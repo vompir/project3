@@ -1,7 +1,61 @@
+@media (max-width: 768px) {
+  .promo {
+    width: 100% !important;
+  }
+  .promo__wrapper {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  .promo__icons {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    gap: 40px !important;
+  }
+  .promo__consultation, .promo__button {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  .running-man-2-64 {
+    width: 100% !important;
+  }
+  .header {
+    width: 100% !important;
+  }
+  .header__official {
+    font-size: 10px;
+  }
+  .header__phone button {
+    width: 100px !important;
+    font-size: 10px !important;
+  }
+  .garmin, .header__phone {
+    font-size: 10px !important;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    width: 100% !important;
+  }
+  .header__official {
+    font-size: 14px;
+  }
+  .header__phone button {
+    width: 150px !important;
+    font-size: 14px !important;
+  }
+  .garmin, .header__phone {
+    font-size: 16px !important;
+    text-align: center;
+  }
+}
 .promo {
   min-height: 650px;
   padding: 21px 0 93px 0;
-  background: url("../img/bg1.jpg");
+  background: url("../img/bg1.jpg") center center/cover no-repeat;
 }
 .promo__wrapper {
   display: -webkit-box;
@@ -145,6 +199,49 @@
 }
 .header__phone button:hover {
   background-color: rgb(148.255, 0.745, 0.745);
+}
+
+.advantages {
+  min-height: 470px;
+  padding: 70px 0 78px 0;
+  background-color: #f6f6f6;
+}
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 65px 0 78px 0;
+}
+.advantages__subtitle {
+  color: #0d0d0d;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  padding: 38px 0 26px 0;
+}
+.advantages__title {
+  color: #0d0d0d;
+  text-align: center;
+  font-size: 14px;
+}
+.advantages__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container h2 {
+  text-align: center;
 }
 
 * {

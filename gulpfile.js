@@ -1,9 +1,9 @@
-    const gulp = require('gulp');
-    const sass = require('gulp-sass')(require('sass'));
-    const browserSync = require('browser-sync').create();
-    const autoprefixer = require('gulp-autoprefixer');
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const browserSync = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');
 
-    function buildStyles() {
+function buildStyles() {
     return gulp.src('src/sass/**/*.sass')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
@@ -12,19 +12,19 @@
         }))
         .pipe(gulp.dest('src/css'))
         .pipe(browserSync.stream());
-    };
+};
 
-    function serve() {
-        browserSync.init({
-            server: {
-                baseDir: "src"
-            }
-        });
-    };
+function serve() {
+    browserSync.init({
+        server: {
+            baseDir: "src"
+        }
+    });
+};
 
-    function watchFiles() {
-        gulp.watch('src/sass/**/*.sass', buildStyles);
-        gulp.watch('src/*.html').on('change', browserSync.reload);
-    }
+function watchFiles() {
+    gulp.watch('src/sass/**/*.sass', buildStyles);
+    gulp.watch('src/*.html').on('change', browserSync.reload);
+}
 
-    exports.default = gulp.series(buildStyles, gulp.parallel(serve, watchFiles));
+exports.default = gulp.series(buildStyles, gulp.parallel(serve, watchFiles));

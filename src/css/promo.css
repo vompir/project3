@@ -1,7 +1,61 @@
+@media (max-width: 768px) {
+  .promo {
+    width: 100% !important;
+  }
+  .promo__wrapper {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  .promo__icons {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    gap: 40px !important;
+  }
+  .promo__consultation, .promo__button {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  .running-man-2-64 {
+    width: 100% !important;
+  }
+  .header {
+    width: 100% !important;
+  }
+  .header__official {
+    font-size: 10px;
+  }
+  .header__phone button {
+    width: 100px !important;
+    font-size: 10px !important;
+  }
+  .garmin, .header__phone {
+    font-size: 10px !important;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    width: 100% !important;
+  }
+  .header__official {
+    font-size: 14px;
+  }
+  .header__phone button {
+    width: 150px !important;
+    font-size: 14px !important;
+  }
+  .garmin, .header__phone {
+    font-size: 16px !important;
+    text-align: center;
+  }
+}
 .promo {
   min-height: 650px;
   padding: 21px 0 93px 0;
-  background: url("../img/bg1.jpg");
+  background: url("../img/bg1.jpg") center center/cover no-repeat;
 }
 .promo__wrapper {
   display: -webkit-box;

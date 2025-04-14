@@ -13,7 +13,7 @@
             <header class="header">
 
                 <a href="#" class="header__logo">
-                    <img src="icons/running-man-2-64.png" alt="" class="running-man-2-64">
+                    <img src="icons/running-man-2-64.png" alt="" class="running-man-2-64" loading="lazy">
                 </a>
 
                 <div class="header__official">
@@ -23,13 +23,13 @@
 
                 <div class="header__phone">
                     <a href="tel:+74999228974">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button class="button button_call">заказать звонок</button>
                 </div>
             </header>
             
             <div class="promo__wrapper">
                 <h1 class="promo__header">Подбор пульсометра</h1>
-                <h1 class="promo__subheader">с учётом Вашего уровня подготовки</h1>
+                <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
             </div>
 
             <div class="promo__icons">
@@ -53,7 +53,7 @@
             </div>
 
             <div class="promo__button">
-                <button class="button">заказать кОНСУЛЬТАЦИЮ</button>
+                <button class="button consultation_button">заказать кОНСУЛЬТАЦИЮ</button>
             </div>
 
             <div class="promo__consultation">
@@ -106,10 +106,25 @@
                         Помогаем с обучением <br>
                         правильной технике бега! <br>  
                         Дружим с крупнейшей школой бега в <br>
-                        России - I LOVE RUNNING.
+                        России - <a href="#">I LOVE RUNNING</a>.
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="consultation">
+        <div class="container">
+            <h2 class="consultation__title">Получите бесплатную консультацию <br>
+                по подбору пульсометра</h2>
+            <p class="consultation__descr">Просто заполните форму заявки <br>
+            и мы перезвоним вам в течении 10 минут</p>
+            <form action="#" class="consultation__form">
+                <input type="text" required placeholder="Ваше имя" class="consultation__input ">
+                <input type="number" required placeholder="Ваш телефон" class="consultation__input">
+                <input type="email" required placeholder="Ваш E-mail" class="consultation__input">
+                <button type="submit" class="button consultation_button">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
         </div>
     </div>
 </body>

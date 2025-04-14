@@ -201,6 +201,41 @@
   background-color: rgb(148.255, 0.745, 0.745);
 }
 
+.button {
+  padding: auto;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background-color: #c70101;
+  font-size: 12px;
+  margin-top: 8px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+.button:hover {
+  background-color: rgb(148.255, 0.745, 0.745);
+}
+
+.consultation_button {
+  padding: auto;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background-color: #c70101;
+  font-size: 12px;
+  margin-top: 8px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  width: 300px;
+  height: 55px;
+  font-size: 16px;
+}
+.consultation_button:hover {
+  background-color: rgb(148.255, 0.745, 0.745);
+}
+
 .advantages {
   min-height: 470px;
   padding: 70px 0 78px 0;
@@ -231,6 +266,9 @@
   text-align: center;
   font-size: 14px;
 }
+.advantages__title a {
+  color: #ff0000;
+}
 .advantages__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,6 +282,70 @@
   text-align: center;
 }
 
+.consultation {
+  min-height: 680px;
+  padding: 100px 0 92px 0;
+  background: url("../img/bg2.jpg") center center/cover no-repeat;
+}
+.consultation__title {
+  color: #fff;
+  text-align: left !important;
+  font-size: 36px;
+  font-weight: bold;
+}
+.consultation__descr {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+  padding: 80px 0 36px 0;
+}
+.consultation__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 300px;
+}
+.consultation__input {
+  width: 300px;
+  height: 50px;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  color: #4b4b4b;
+  padding: 20px 0 18px 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .consultation__form {
+    width: 350px;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    margin: 0 auto;
+  }
+  .consultation__input {
+    width: 350px !important;
+  }
+  .consultation button {
+    text-align: center !important;
+    margin: 0 auto;
+  }
+}
+@media (width: 768px) {
+  .consultation__form {
+    margin: 0;
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

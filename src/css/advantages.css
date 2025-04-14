@@ -28,6 +28,9 @@
   text-align: center;
   font-size: 14px;
 }
+.advantages__title a {
+  color: #ff0000;
+}
 .advantages__icon {
   display: -webkit-box;
   display: -ms-flexbox;

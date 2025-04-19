@@ -1,0 +1,114 @@
+@import 'variables'
+@import 'mixins'
+@media (max-width: 768px)
+    .promo
+        width: 100% !important
+        &__wrapper
+            align-items: center !important
+        &__icons
+            justify-content: center !important
+            gap: 40px !important
+        &__consultation, &__button
+            justify-content: center !important
+    .running-man-2-64
+        width: 100% !important
+    .header
+        width: 100% !important
+        &__official
+            font-size: 10px
+        &__phone
+            button
+                width: 100px !important
+                font-size: 10px !important  
+    .garmin, .header__phone
+        font-size: 10px !important
+        text-align: center
+@media (min-width: 768px) and (max-width: 1024px)
+    .header
+        width: 100% !important
+        &__official
+            font-size: 14px
+        &__phone
+            button
+                width: 150px !important
+                font-size: 14px !important  
+    .garmin, .header__phone
+        font-size: 16px !important
+        text-align: center
+.promo
+    min-height: 650px
+    padding: 21px 0 93px 0
+    background: url('../img/bg1.jpg') center (center/cover) no-repeat
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-top: 90px
+    &__header, &__subheader
+        color: $white-color
+        text-align: center
+        text-transform: $uppercase
+    &__header
+        font-size: 42px
+        font-weight: 700
+    &__subheader
+        font-size: 24px
+    &__icons
+        color: $white-color
+        display: flex
+        justify-content: flex-end
+        gap: 90px
+        margin-top: 70px
+    &__icon
+        width: 108px
+        text-align: center
+        color: #ffffff
+        font-size: 14px
+        font-weight: 500
+    &__button
+        display: flex
+        justify-content: flex-end
+        .button
+            @include button
+            font-size: 16px
+            margin-top: 18px
+            width: 300px
+            height: 50px
+            transition: 0.5s all ease
+    &__consultation
+        margin-top: 18px
+        display: flex
+        justify-content: flex-end
+        color: $white-color
+        font-size: 16px
+        a
+            margin-left: 5px
+            @include phone_number
+            text-decoration: underline
+.header
+    display: flex
+    justify-content: space-between
+    color: $white-color
+    &__official
+        text-align: center
+        p
+            font-size: 18px
+    &__phone
+        display: flex
+        flex-direction: column
+        a
+            @include phone_number
+            transition: 0.5s all ease
+            &:hover
+                font-size: 1.01em
+                text-decoration: underline
+        button
+            @include button
+            width: 150px
+            height: 30px
+            transition: 0.5s all ease
+            
+            
+
+        
+

@@ -4,27 +4,27 @@ const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 
 function buildStyles() {
-    return gulp.src('src/sass/**/*.sass')
+    return gulp.src('sass/**/*.sass')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('src/css'))
+        .pipe(gulp.dest('css'))
         .pipe(browserSync.stream());
 };
 
 function serve() {
     browserSync.init({
         server: {
-            baseDir: "src"
+            baseDir: "./"
         }
     });
 };
 
 function watchFiles() {
-    gulp.watch('src/sass/**/*.sass', buildStyles);
-    gulp.watch('src/*.html').on('change', browserSync.reload);
+    gulp.watch('sass/**/*.sass', buildStyles);
+    gulp.watch('*.html').on('change', browserSync.reload);
 }
 
 exports.default = gulp.series(buildStyles, gulp.parallel(serve, watchFiles));

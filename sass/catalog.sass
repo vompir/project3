@@ -1,0 +1,105 @@
+@use 'variables'
+
+.catalog
+    .title
+        font-weight: bold
+        text-align: center
+        color: variables.$black-color
+    &__tabs
+        margin-top: 70px
+        display: flex
+        justify-content: center
+        align-items: center
+        list-style-type: none
+        margin-bottom: 0
+        padding-left: 0
+    &__tab
+        width: 220px
+        height: 50px
+        transform: skewX(-25deg)
+        margin: 0 5px
+        font-size: 18px
+        font-weight: 500
+        text-align: center
+        line-height: 48px
+        border: solid 2px variables.$border-color
+        border-color: variables.$border-color
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            box-shadow: 3px 3px 20px variables.$red-color
+            border: none
+        div
+            transform: skewX(25deg)
+        &_active
+            color: variables.$white-color
+            background-color: variables.$red-color
+        
+    &__content
+        margin-top: 60px
+        display: grid
+        grid-template-columns: repeat(3, 300px)
+        grid-template-rows: repeat(2, 440px)
+        gap: 20px
+        hr
+            margin: 10px auto 
+            width: 260px
+            background-color: #e8e8e8
+    &-item
+        width: 300px
+        height: 440px    
+        border: solid 2px #e8e8e8
+        background-color: variables.$white-color
+        text-align: center
+        &__footer
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            height: 40px
+            button
+                width: 130px
+                height: 40px
+                margin: 0
+                margin-right: 20px
+        &__prices
+            margin-left: 20px
+            width: 97px
+        &__old-price
+            text-align: left
+            color: #555
+            text-decoration: line-through
+            font-size: 12px
+            font-weight: 300
+            padding-top: 0
+            margin-bottom: 0
+        &__new-price
+            text-align: left
+            width: 97px
+            color: variables.$price-color
+            margin-bottom: 0
+            font-size: 17px
+            font-weight: bold
+        img
+            display: block
+            margin: 10px auto
+        &__subtitle
+            font-size: 16px
+            font-weight: bold
+            color: variables.$black-color
+            margin-top: 20px
+            margin-bottom: 16px
+        &__descr
+            font-size: 14px
+            font-weight: 300
+            color: variables.$black-color
+            margin-bottom: 16px
+        &__about
+            height: 21px
+        &__link
+            display: block
+            line-height: 10px
+            position: relative
+            color: variables.$red-color
+            font-size: 14px
+            font-weight: 500
+            

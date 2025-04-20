@@ -1,5 +1,5 @@
-@import 'variables'
-@import 'mixins'
+@use 'variables'
+@use 'mixins'
 @media (max-width: 768px)
     .promo
         width: 100% !important
@@ -45,16 +45,16 @@
         align-items: flex-end
         margin-top: 90px
     &__header, &__subheader
-        color: $white-color
+        color: variables.$white-color
         text-align: center
-        text-transform: $uppercase
+        text-transform: variables.$uppercase
     &__header
         font-size: 42px
         font-weight: 700
     &__subheader
         font-size: 24px
     &__icons
-        color: $white-color
+        color: variables.$white-color
         display: flex
         justify-content: flex-end
         gap: 90px
@@ -69,7 +69,7 @@
         display: flex
         justify-content: flex-end
         .button
-            @include button
+            @include mixins.button
             font-size: 16px
             margin-top: 18px
             width: 300px
@@ -79,16 +79,16 @@
         margin-top: 18px
         display: flex
         justify-content: flex-end
-        color: $white-color
+        color: variables.$white-color
         font-size: 16px
         a
             margin-left: 5px
-            @include phone_number
+            @include mixins.phone_number
             text-decoration: underline
 .header
     display: flex
     justify-content: space-between
-    color: $white-color
+    color: variables.$white-color
     &__official
         text-align: center
         p
@@ -97,18 +97,13 @@
         display: flex
         flex-direction: column
         a
-            @include phone_number
+            @include mixins.phone_number
             transition: 0.5s all ease
             &:hover
                 font-size: 1.01em
                 text-decoration: underline
         button
-            @include button
+            @include mixins.button
             width: 150px
             height: 30px
             transition: 0.5s all ease
-            
-            
-
-        
-

@@ -456,10 +456,13 @@
 }
 .catalog__content {
   margin-top: 60px;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(2, 440px);
   gap: 20px;
+}
+.catalog__content_active {
+  display: grid;
 }
 .catalog__content hr {
   margin: 10px auto;
@@ -472,6 +475,7 @@
   border: solid 2px #e8e8e8;
   background-color: #fff;
   text-align: center;
+  overflow: hidden;
 }
 .catalog-item__footer {
   display: -webkit-box;
@@ -540,6 +544,77 @@
   color: #c70101;
   font-size: 14px;
   font-weight: 500;
+}
+.catalog-item__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(200% + 40px);
+}
+.catalog-item__content {
+  width: 50%;
+  margin-right: 0px;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.catalog-item__content_active {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  margin-right: 20px;
+}
+.catalog-item__list {
+  width: 50%;
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  list-style-type: none;
+  margin-right: 35px;
+  margin-top: 18px;
+  position: relative;
+}
+.catalog-item__list_active {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  margin-left: 0px;
+}
+.catalog-item__list li {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  color: #555;
+  position: relative;
+}
+.catalog-item__list li::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #c70101;
+  left: -14px;
+  top: 7px;
+}
+.catalog-item__list a {
+  display: block;
+  line-height: 10px;
+  position: relative;
+  color: #c70101;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 316px;
+}
+.catalog-item__list_active {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  margin-left: 0px;
 }
 
 * {

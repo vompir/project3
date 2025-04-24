@@ -1,0 +1,50 @@
+@use 'variables'
+@media (max-width: 425px)
+    .reviews
+        &__item
+            flex-direction: column !important 
+            align-items: center !important 
+        &__text
+            &_name
+                padding-top: 15px
+            &_name, &_marathon
+                text-align: center
+            margin: 0 !important
+            img
+                margin: 0 auto  
+.reviews
+    padding-bottom: 69px
+    hr
+        margin: 0
+    &__title
+        padding-top: 103px
+        margin-bottom: 0
+        font-size: 30px
+        font-weight: bold
+        color: variables.$black-color
+    &__item
+        display: flex
+        flex-direction: row
+        padding-top: 70px
+        padding-bottom: 48px
+        &:last-child
+            padding-bottom: 0
+        img
+            height: 169px
+            width: 169px
+    &__text
+        margin-left: 62px
+        text-align: left
+        &_name
+            font-size: 18px
+            font-weight: bold
+            color: variables.$black-color
+        &_marathon
+            font-size: 14px
+            font-weight: 300
+            color: variables.$marathon-color
+            margin: 10px 0 19px 0
+        &_descr
+            font-size: 16px
+            font-weight: 300
+            color: variables.$black-color

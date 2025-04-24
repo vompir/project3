@@ -405,6 +405,23 @@
     right: -75px;
   }
 }
+@media (max-width: 768px) {
+  .catalog__tab, .catalog__tab_active {
+    font-size: 12px !important;
+  }
+  .catalog__content_active {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+}
 .catalog .title {
   font-weight: bold;
   text-align: center;
@@ -615,6 +632,81 @@
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   margin-left: 0px;
+}
+
+@media (max-width: 425px) {
+  .reviews__item {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  .reviews__text {
+    margin: 0 !important;
+  }
+  .reviews__text_name {
+    padding-top: 15px;
+  }
+  .reviews__text_name, .reviews__text_marathon {
+    text-align: center;
+  }
+  .reviews__text img {
+    margin: 0 auto;
+  }
+}
+.reviews {
+  padding-bottom: 69px;
+}
+.reviews hr {
+  margin: 0;
+}
+.reviews__title {
+  padding-top: 103px;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0d0d0d;
+}
+.reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 70px;
+  padding-bottom: 48px;
+}
+.reviews__item:last-child {
+  padding-bottom: 0;
+}
+.reviews__item img {
+  height: 169px;
+  width: 169px;
+}
+.reviews__text {
+  margin-left: 62px;
+  text-align: left;
+}
+.reviews__text_name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0d0d0d;
+}
+.reviews__text_marathon {
+  font-size: 14px;
+  font-weight: 300;
+  color: #646464;
+  margin: 10px 0 19px 0;
+}
+.reviews__text_descr {
+  font-size: 16px;
+  font-weight: 300;
+  color: #0d0d0d;
 }
 
 * {

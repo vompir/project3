@@ -1,5 +1,14 @@
 @use 'variables'
 
+@media (max-width: 768px)
+    .catalog
+        &__tab, &__tab_active
+            font-size: 12px !important
+        &__content
+            &_active
+                align-items: center !important
+                display: flex !important
+                flex-direction: column !important
 .catalog
     .title
         font-weight: bold
@@ -34,7 +43,6 @@
         &_active
             color: variables.$white-color
             background-color: variables.$red-color
-        
     &__content
         margin-top: 60px
         display: none

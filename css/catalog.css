@@ -1,3 +1,20 @@
+@media (max-width: 768px) {
+  .catalog__tab, .catalog__tab_active {
+    font-size: 12px !important;
+  }
+  .catalog__content_active {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+}
 .catalog .title {
   font-weight: bold;
   text-align: center;

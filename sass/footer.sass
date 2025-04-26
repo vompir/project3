@@ -1,0 +1,72 @@
+@use 'variables'
+
+@media (max-width: 425px)
+    .footer
+        &__info
+            width: 100% !important
+        &__icons
+            justify-content: space-between !important
+        &__circle
+            margin: 0 !important
+     
+.footer
+    height: 630px
+    position: relative
+    &__info
+        position: absolute
+        width: 460px
+        min-height: 270px
+        background-color: variables.$red-color
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        padding: 50px 68px 60px 68px
+        text-align: center
+        font-size: 18px
+        font-weight: 700
+        color: #fff
+        line-height: 20px
+    &__tel
+        color: #ffffff
+        text-decoration: none
+        position: relative
+        &::after
+            position: absolute
+            transition: 0.3s all
+            content: ''
+            width: 0
+            height: 2px
+            background-color: #fff
+            top: 100%
+            left: 0
+        &:hover::after
+            width: 100% 
+    &__address
+            margin-bottom: 36px
+    &__icons
+        height: 50px
+        margin-top: 30px
+        display: flex
+    &__circle
+        width: 50px
+        height: 50px
+        border: 3px solid #fff
+        border-radius: 50%
+        background: transparent
+        &:first-child
+            margin-left: 58px
+            img
+                margin-top: 50%
+                transform: translateY(-50%)
+        &:nth-child(2)
+            margin-left: 30px
+            img
+                margin-top: 50%
+                transform: translateY(-50%)
+        &:last-child
+            margin-left: 30px
+            img
+                margin-top: 50%
+                transform: translateY(-50%)
+            
+        

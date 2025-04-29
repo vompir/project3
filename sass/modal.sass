@@ -1,0 +1,43 @@
+@use 'variables'
+    
+.overlay
+    height: 100vh
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.56)
+    position: fixed
+    top: 0
+.modal
+    display: block
+    overflow: visible
+    width: 380px
+    height: 420px
+    padding: 38px 37px 40px 40px
+    background-color: #f2f2f2
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    &_close
+        position: absolute
+        top: 0
+        right: -40px
+        font-size: 41px
+        line-height: 21px
+        color: variables.$red-color
+        cursor: pointer
+    &_title
+        text-align: center
+        font-size: 18px
+        font-weight: bold
+        color: variables.$black-color
+        margin-bottom: 11px
+    &_descr
+        font-size: 14px
+        font-weight: 500
+        text-align: center
+        color: variables.$black-color
+        margin-bottom: 25px
+    .consultation_form
+        margin-top: 25px
+        button
+            margin-top: 5px !important

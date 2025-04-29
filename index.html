@@ -121,7 +121,7 @@
             <p class="consultation__descr">Просто заполните форму заявки <br>
             и мы перезвоним вам в течении 10 минут</p>
             <form action="#" class="consultation__form">
-                <input type="text" required placeholder="Ваше имя" class="consultation__input ">
+                <input type="text" required placeholder="Ваше имя" class="consultation__input">
                 <input type="number" required placeholder="Ваш телефон" class="consultation__input">
                 <input type="email" required placeholder="Ваш E-mail" class="consultation__input">
                 <button type="submit" class="button consultation_button">заказать кОНСУЛЬТАЦИЮ</button>
@@ -476,7 +476,33 @@
             </div>
         </div>
     </footer>
+    
+    <div class="overlay">
+        <div class="modal" id='consultation'>
+            <div class="modal_close">&times;</div>
+            <div class="modal_title">Просто заполните форму заявки</div>
+            <div class="modal_descr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="consultation__form">
+                <input type="text" required placeholder="Ваше имя" class="consultation__input">
+                <input type="number" required placeholder="Ваш телефон" class="consultation__input">
+                <input type="email" required placeholder="Ваш E-mail" class="consultation__input">
+                <button type="submit" class="button consultation_button">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
 
+        <div class="modal" id='order'>
+            <div class="modal_close">&times;</div>
+            <div class="modal_title">Ваш заказ:</div>
+            <div class="modal_descr">Пульсометр Polar FT1</div>
+            <form action="#" class="consultation__form">
+                <input type="text" required placeholder="Ваше имя" class="consultation__input">
+                <input type="number" required placeholder="Ваш телефон" class="consultation__input">
+                <input type="email" required placeholder="Ваш E-mail" class="consultation__input">
+                <button type="submit" class="button consultation_button">Купить</button>
+            </form>
+        </div>
+
+    </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.js"></script>

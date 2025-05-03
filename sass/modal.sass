@@ -11,7 +11,7 @@
             top: 10px !important
 .overlay
     display: none
-    height: 100vh
+    height: 100%
     width: 100%
     background-color: rgba(0, 0, 0, 0.56)
     position: fixed
@@ -20,7 +20,7 @@
     display: block
     overflow: visible
     width: 380px
-    height: 420px
+    height: 470px
     padding: 38px 37px 40px 40px
     background-color: #f2f2f2
     position: absolute
@@ -47,10 +47,16 @@
         text-align: center
         color: variables.$black-color
         margin-bottom: 25px
-    .consultation_form
+    .consultation__form
         margin-top: 25px
         button
             margin-top: 5px !important
+.error
+    border: 1px solid red
+    margin-bottom: 5px
+label.error
+    border: none
+        
 #thanks
     height: 140px
     padding: 38px 76px 43px 81px

@@ -12,7 +12,7 @@
 }
 .overlay {
   display: none;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.56);
   position: fixed;
@@ -23,7 +23,7 @@
   display: block;
   overflow: visible;
   width: 380px;
-  height: 420px;
+  height: 470px;
   padding: 38px 37px 40px 40px;
   background-color: #f2f2f2;
   position: absolute;
@@ -55,11 +55,20 @@
   color: #0d0d0d;
   margin-bottom: 25px;
 }
-.modal .consultation_form {
+.modal .consultation__form {
   margin-top: 25px;
 }
-.modal .consultation_form button {
+.modal .consultation__form button {
   margin-top: 5px !important;
+}
+
+.error {
+  border: 1px solid red;
+  margin-bottom: 5px;
+}
+
+label.error {
+  border: none;
 }
 
 #thanks {
